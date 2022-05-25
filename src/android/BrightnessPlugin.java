@@ -89,6 +89,7 @@ public class BrightnessPlugin extends CordovaPlugin {
 			SetTask task = new SetTask();
 			task.setParams(activity, layoutParams);
 			activity.runOnUiThread(task);
+			Settings.System.putInt(activity.getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, (int)brightness);
 			callbackContext.success("OK");
 
 		} catch (NullPointerException e) {
