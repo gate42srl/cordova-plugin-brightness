@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import android.app.Activity;
+import android.provider.Settings;
 import android.view.WindowManager.LayoutParams;
 import android.view.WindowManager;
 import android.view.Window;
